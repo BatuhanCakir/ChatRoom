@@ -2,7 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 require('body-parser');
-const port = 8000
+const port = 3000
 var app = require('express')();
 var http = require('http');
 var server = app.listen(port);
