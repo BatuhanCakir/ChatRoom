@@ -18,7 +18,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 let username = ''
 app.get('/', function(req, res, next) {
   app = req.app.get('ssoHostname')
-  console.log('bab')
   res.render('register');
 });
 //save name
@@ -29,7 +28,6 @@ app.post('/chat', function(req, res, next) {
 });
 
 app.get('/chat', function(req, res, next) {
-  console.log(username)
   if (username.length ===0){
     res.redirect('/');
   }
